@@ -9,7 +9,7 @@
       <button class="btn-nav">2</button>
       <button class="btn-nav">3</button>
       <button class="btn-nav">4</button>
-      <button class="btn-nav">4</button>
+      <button class="btn-nav">5</button>
       <button class="btn-nav">След</button>
     </div>
 </template>

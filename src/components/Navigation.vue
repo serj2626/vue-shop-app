@@ -5,12 +5,13 @@ const emit = defineEmits(['openMenu']);
 </script>
 
 <template>
-  <div class="bg-pink-200 shadow-md py-5 m-0">
+  <div class="bg-pink-300 shadow-md py-5 m-0">
     <div class="flex justify-around items-center">
-      <h1 class="text-3xl font-bold text-slate-700 uppercase">Vue Shop</h1>
+      <h1 class="text-3xl font-bold text-slate-700
+      uppercase text">Vue Shop</h1>
       <button 
       @click="emit('openMenu')"
-      class="bg-white px-4 py-2 text-xl rounded hover:outline hover:outline-pink-300">
+      class="bg-white px-4 py-2 text-xl rounded ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -30,4 +31,19 @@ const emit = defineEmits(['openMenu']);
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.text{
+  color: white;
+  text-shadow: 2px 2px 6px #000000;
+}
+
+button{
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+
+button:hover{
+  transform: scale(1.1);
+  color: rgb(237, 145, 160);
+}
+</style>
